@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurateur 3D en AR</title>
+</head>
+
+<body>
+    <h1>Test de Réalité Augmentée</h1>
+    <p>Appuie sur le bouton ci-dessous pour afficher le modèle 3D en réalité augmentée.</p>
+
+    <!-- Bouton pour afficher le modèle en réalité augmentée -->
+    <button id="arButton">Voir en Réalité Augmentée</button>
+
+    <script>
+        document.getElementById("arButton").addEventListener("click", function () {
+            // Crée un lien vers le modèle usdz
+            let usdzLink = document.createElement("a");
+            usdzLink.setAttribute("href", "media/model.usdz"); // Assure-toi de remplacer par le nom exact de ton modèle
+            usdzLink.setAttribute("rel", "ar");
+            usdzLink.click();
+        });
+    </script>
+</body>
+
+</html>
